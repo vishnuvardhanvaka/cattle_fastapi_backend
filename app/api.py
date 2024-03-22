@@ -1,14 +1,10 @@
 from fastapi import FastAPI,Form
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
-import requests
-from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
 import google.generativeai as genai
-from datetime import datetime
-from pymongo import MongoClient,DESCENDING
-from datetime import datetime,timedelta
 
+from sklearn.neighbors import KNeighborsClassifier
 from joblib import dump, load
 import pickle
 
@@ -43,8 +39,8 @@ disease=['mastitis','blackleg','bloat','coccidiosis','cryptosporidiosis',
 
 
 # model = load('./app/KNN.joblib')
-with open('./app/KNN.pkl', 'rb') as f:
-    test_model = pickle.load(f)
+# with open('./app/KNN.pkl', 'rb') as f:
+#     test_model = pickle.load(f)
 
 # @app.post('/getDisease')
 # def getDisease():
