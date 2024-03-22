@@ -33,6 +33,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = load('./app/KNN.joblib')
+# model = load('./app/KNN.joblib')
 
 
