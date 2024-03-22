@@ -14,6 +14,6 @@ google-generativeai
 pymongo
 python-multipart
 typing_extensions
+scikit-learn
 joblib
-# scikit-learn
 # sklearn
