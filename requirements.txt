@@ -14,3 +14,4 @@ google-generativeai
 pymongo
 python-multipart
 typing_extensions
+joblib
