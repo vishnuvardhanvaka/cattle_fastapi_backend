@@ -16,4 +16,4 @@ python-multipart
 typing_extensions
 joblib
 # scikit-learn
-sklearn
+# sklearn
