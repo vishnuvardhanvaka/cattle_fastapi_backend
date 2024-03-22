@@ -43,8 +43,8 @@ disease=['mastitis','blackleg','bloat','coccidiosis','cryptosporidiosis',
 
 
 # model = load('./app/KNN.joblib')
-with open('KNN.pkl', 'rb') as f:
-    test_model = pickle.load(f)
+# with open('KNN.pkl', 'rb') as f:
+#     test_model = pickle.load(f)
 
 # @app.post('/getDisease')
 # def getDisease():
