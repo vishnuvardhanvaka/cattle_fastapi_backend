@@ -10,6 +10,7 @@ from pymongo import MongoClient,DESCENDING
 from datetime import datetime,timedelta
 
 from joblib import dump, load
+import pickle
 
 origins = [
     "http://localhost.tiangolo.com",
@@ -34,5 +35,6 @@ app.add_middleware(
 )
 
 # model = load('./app/KNN.joblib')
-
+with open('KNN.pkl', 'rb') as f:
+    test_model = pickle.load(f)
 
