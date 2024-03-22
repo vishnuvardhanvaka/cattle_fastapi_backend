@@ -9,7 +9,7 @@ from datetime import datetime
 from pymongo import MongoClient,DESCENDING
 from datetime import datetime,timedelta
 
-from joblib import dump, load
+# from joblib import dump, load
 
 origins = [
     "http://localhost.tiangolo.com",
@@ -33,5 +33,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# model = load('./app/KNN.joblib')
 
 
