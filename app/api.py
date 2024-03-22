@@ -4,7 +4,7 @@ from typing import Optional
 from googleapiclient.discovery import build
 import google.generativeai as genai
 
-from sklearn.neighbors import KNeighborsClassifier
+# from sklearn.neighbors import KNeighborsClassifier
 # from joblib import dump, load
 # import pickle
 
