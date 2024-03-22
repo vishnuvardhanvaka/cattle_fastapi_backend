@@ -46,12 +46,12 @@ disease=['mastitis','blackleg','bloat','coccidiosis','cryptosporidiosis',
 with open('KNN.pkl', 'rb') as f:
     test_model = pickle.load(f)
 
-@app.post('/getDisease')
-def getDisease():
-    symptoms=[[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
-    #actual output for above sample x is  disease[25] = fog_fever
-    predict = test_model.predict(symptoms)
-    predicted=predict[0]
-    print(predicted)
-    print(test_model[predicted])
-    return {'success':True,'disease':test_model[predicted]}
+# @app.post('/getDisease')
+# def getDisease():
+#     symptoms=[[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+#     #actual output for above sample x is  disease[25] = fog_fever
+#     predict = test_model.predict(symptoms)
+#     predicted=predict[0]
+#     print(predicted)
+#     print(test_model[predicted])
+#     return {'success':True,'disease':test_model[predicted]}
